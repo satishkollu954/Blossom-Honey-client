@@ -301,7 +301,7 @@ const ProductDetails: React.FC = () => {
                         ))}
                     </div>
 
-                    {cookies.role !== "admin" && (
+                    {/* {cookies.role !== "admin" && (
                         <button
                             onClick={() =>
                                 !isInCart &&
@@ -323,7 +323,7 @@ const ProductDetails: React.FC = () => {
 
                     <div className="mt-4 text-sm text-gray-500 text-center lg:text-left">
                         <p>Delivery Time: {product.deliveryTime}</p>
-                    </div>
+                    </div> */}
                 </div>
             </div>
 
@@ -337,10 +337,10 @@ const ProductDetails: React.FC = () => {
 
 
             {/* Reviews Section */}
-            <div className="flex-1 p-3 bg-gray-50 rounded-xl shadow-inner max-h-80 overflow-y-auto">
+            {/* <div className="flex-1 p-3 bg-gray-50 rounded-xl shadow-inner max-h-80 overflow-y-auto">
                 <p className="text-gray-800 font-semibold mb-3">Reviews</p>
 
-                {/* Overall Rating Section */}
+            
                 {product.reviews && product.reviews.length > 0 ? (
                     <div className="flex items-center justify-between mb-4 bg-white p-3 rounded-lg shadow-sm border border-gray-200">
                         <div>
@@ -381,14 +381,14 @@ const ProductDetails: React.FC = () => {
                     </div>
                 ) : null}
 
-                {/* Individual Reviews */}
+               
                 {product.reviews && product.reviews.length > 0 ? (
                     product.reviews.map((review, index) => (
                         <div
                             key={index}
                             className="mb-4 p-3 border border-gray-200 rounded-lg hover:shadow-sm transition-shadow"
                         >
-                            {/* Reviewer Name & Rating */}
+                          
                             <div className="flex items-center justify-between mb-2">
                                 <p className="font-semibold text-gray-700">
                                     {review.username || "Anonymous"}
@@ -411,12 +411,12 @@ const ProductDetails: React.FC = () => {
                                 </div>
                             </div>
 
-                            {/* Comment */}
+                           
                             {review.comment && (
                                 <p className="text-gray-600 text-sm mb-2">{review.comment}</p>
                             )}
 
-                            {/* Review Images */}
+                           
                             {review.images && review.images.length > 0 && (
                                 <div className="flex gap-2 overflow-x-auto">
                                     {review.images.map((img, idx) => (
@@ -437,7 +437,7 @@ const ProductDetails: React.FC = () => {
                 ) : (
                     <p className="text-gray-500 text-sm">No reviews yet.</p>
                 )}
-            </div>
+            </div> */}
 
 
             {/* Same Category Carousel */}
