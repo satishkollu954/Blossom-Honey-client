@@ -79,7 +79,7 @@ export function Navbar() {
                             </NavLink>
                         )}
 
-                        {role !== "admin" && (
+                        {/* {role !== "admin" && (
                             <Link
                                 to="/cart"
                                 className="relative flex items-center text-gray-800 hover:text-amber-500 transition"
@@ -97,10 +97,10 @@ export function Navbar() {
 
 
 
-                        )}
+                        )} */}
 
 
-                        {/* Profile Icon with Dropdown */}
+                        {/* Profile Icon with Dropdown 
                         <div className="relative" ref={dropdownRef}>
                             {!isLoggedIn ? (
                                 <Link to="/login" className="text-gray-800 hover:text-amber-500 transition">
@@ -150,7 +150,7 @@ export function Navbar() {
                                     )}
                                 </>
                             )}
-                        </div>
+                        </div> */}
                     </div>
 
                     {/* Mobile Right Section */}
@@ -196,7 +196,7 @@ export function Navbar() {
                                     Dashboard
                                 </NavLink>
                             )}
-
+                            {/* 
                             {role !== "admin" && (
                                 <Link
                                     to="/cart"
@@ -213,9 +213,9 @@ export function Navbar() {
                                 </Link>
 
 
-                            )}
+                            )} */}
 
-                            {/* Profile for Mobile */}
+                            {/* Profile for Mobile 
                             <div className="relative" ref={dropdownRef}>
                                 {!isLoggedIn ? (
                                     <Link to="/login" className="text-gray-800 hover:text-amber-500 transition">
@@ -264,7 +264,7 @@ export function Navbar() {
                                         )}
                                     </>
                                 )}
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 )}

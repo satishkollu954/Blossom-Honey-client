@@ -70,7 +70,7 @@ const ShopCard: React.FC<{ product: Product }> = ({ product }) => {
         </h3>
 
         {/* ⭐ Rating Badge Section */}
-        <div className="flex items-center justify-center gap-2 mb-3">
+        {/* <div className="flex items-center justify-center gap-2 mb-3">
           {
             <span className=" text-black px-1 py-1 rounded-md text-sm font-semibold flex items-center gap-1">
               ⭐ {avgRating.toFixed(1)}
@@ -79,7 +79,7 @@ const ShopCard: React.FC<{ product: Product }> = ({ product }) => {
           <span className="text-gray-500 text-sm">
             ({totalRatings} ratings, {totalReviews} reviews)
           </span>
-        </div>
+        </div> */}
 
         <p className="font-bold text-2xl text-yellow-600 mb-3">
           ₹{firstVariant?.finalPrice ?? 0}
